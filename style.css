@@ -29,12 +29,54 @@ ul {
     .active {
       background-color: #4CAF50;
     }
-    
+
 #bod {
-  color: aliceblue;
-  text-align: center;
+  color: white;
   font-family: Future;
 }
+
+.overlay {
+  position: absolute; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,1); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  opacity: .99;
+  transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+}
+
+.title{
+  color:white;
+  backdrop-filter: blur(100px);
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  font-size: 250px;
+  opacity: 1;
+  transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+}
+
+.overlay:hover {
+  opacity: 0;
+}
+
+#h2 {
+  font-size: 100px;
+}
+
 
 p {
 	text-align: center;

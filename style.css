@@ -29,3 +29,7 @@ ul {
     .active {
       background-color: #4CAF50;
     }
+p {
+	text-align: center;
+	font-size: 30px;
+}

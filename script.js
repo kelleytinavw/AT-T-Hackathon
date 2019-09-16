@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // PS! Replace this with your own channel ID
 // If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'D7TRe2fsZfMrtJq0';

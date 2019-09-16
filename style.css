@@ -29,12 +29,14 @@ ul {
     .active {
       background-color: #4CAF50;
     }
+    
 #bod {
   color: aliceblue;
   text-align: center;
   font-family: Future;
 }
 
-#title {
-  
+p {
+	text-align: center;
+	font-size: 30px;
 }

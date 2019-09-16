@@ -4,21 +4,24 @@
 <html>
   <head>
     <title>Home</title>
-    
+    <script>
+      function nextPage() {
+        location.replace('chat_bot.html');
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
   </head>
-  
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="chat_bot.html">Ask the TA</a></li>
-          <li><a href="about.html">Contact</a></li>
-        </ul> 
+
 
   <body>
       
-    
-        <div class="overlay"><h1 class="title">Ask The TA</h1></div>
+      <div class="overlay" onclick="nextPage()"><h1 class="title">Ask The TA</h1></div>
+        <!--<ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chat_bot.html">Ask the TA</a></li>
+          <li><a href="about.html">Contact</a></li>
+        </ul> -->
 
     
       <div id="bod">

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 
-    
+
   </head>
   <body>
   <style>
@@ -39,6 +39,28 @@
     .active {
       background-color: #4CAF50;
     }
+
+    img {
+      border-radius: 50%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 10px;
+    }
+
+    .grid-item {
+      padding: 40px;
+      font-size: 25px;
+      text-align: center;
+      style="color:black;
+    }
+
+    p.sansserif {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     </style>
     </head>
     <body>
@@ -47,8 +69,14 @@
       <li><a href="index.html">Home</a></li>
         <li><a href="chat_bot.html">Ask the TA</a></li>
         <li><a href="about.html">Contact</a></li>
-    </ul>  
-  
+    </ul>
+
+    <div class="grid-container">
+      <div class="grid-item"><img src="blesspic.png" alt="Avatar" style="width:200px";><p class="sansserif">Bless Paynes<br><small>blah</small></p></div>
+      <div class="grid-item"><img src="kelleytinapic.jpg" alt="Avatar" style="width:200px";><p class="sansserif">Kelleytina Williams<br><small>blah</small></p></div>
+      <div class="grid-item"><img src="anthonypic.jpg" alt="Avatar" style="width:200px";><p class="sansserif">Anthony Odum<br><small>blah</small></p></div>
+      <div class="grid-item"><p class="sansserif">placeholder<br><small>blah</small></p></div>
+    </div>
+
   </body>
 </html>
-

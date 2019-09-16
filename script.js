@@ -1,3 +1,5 @@
+// PS! Replace this with your own channel ID
+// If you use this channel ID your app will stop working in the future
 const CLIENT_ID = 'D7TRe2fsZfMrtJq0';
 
 const drone = new ScaleDrone(CLIENT_ID, {
@@ -57,20 +59,23 @@ drone.on('error', error => {
 });
 
 function getRandomName() {
-  const nouns = ["User"];
+  const nouns = ["TA","User"];
+  const ta = ["Smart TA"];
+  const user = ["User"];
+  const temp = ta;
+
   return (
     nouns[Math.floor(Math.random() * nouns.length)]
   );
 }
 
 function getRandomColor() {
-  return '#4346ff';
+  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
 }
 
 //------------- DOM STUFF
 
 const DOM = {
-  membersList: document.querySelector('.members-list'),
   messages: document.querySelector('.messages'),
   input: document.querySelector('.message-form__input'),
   form: document.querySelector('.message-form'),
@@ -100,7 +105,6 @@ function createMemberElement(member) {
 }
 
 function updateMembersDOM() {
-  DOM.membersList.innerHTML = '';
   members.forEach(member =>
     DOM.membersList.appendChild(createMemberElement(member))
   );

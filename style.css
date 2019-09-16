@@ -1,5 +1,5 @@
 html {
-	background-color: #ededed;
+  background-color: rgb(5, 32, 56);
 }
 
 ul {
@@ -29,3 +29,12 @@ ul {
     .active {
       background-color: #4CAF50;
     }
+#bod {
+  color: aliceblue;
+  text-align: center;
+  font-family: Future;
+}
+
+#title {
+  
+}
